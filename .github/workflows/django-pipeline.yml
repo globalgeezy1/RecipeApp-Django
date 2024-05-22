@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest  
     steps:
-    - name: Get Code from Repo
-    - uses: actions/checkout@v4
-    - name: Check manage.py
-      run: cat manage.py 
+      - name: Get Code from Reposs
+        uses: actions/checkout@v4
+      - name: Check manage.py
+        run: cat manage.py
