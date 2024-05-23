@@ -5,11 +5,17 @@ on:
     branches: [ main ]
 
 jobs:
-
+ test:
+        runs-on: ubuntu-latest    
+        steps: 
+         - name: Get Code from repo
+           uses: actions/checkout@v4    
+         - name: Find manage.py file
+           run: cat manage.py
   build:
     runs-on: ubuntu-latest
-
     steps:
+    - name: Get code from repo
     - uses: actions/checkout@v2
 
     - name: Build Docker Image
