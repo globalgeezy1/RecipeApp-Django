@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
          - name: Get code from repo
-         - uses: actions/checkout@v2
+           uses: actions/checkout@v2
 
          - name: Build Docker Image
            run: docker build . --file Dockerfile --tag my-django-app:latest
