@@ -34,4 +34,4 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: tayo9/recipeapp-django      
+                tags: globalgeezy/recipeapp-django      
