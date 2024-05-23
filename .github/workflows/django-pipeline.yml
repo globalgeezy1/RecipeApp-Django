@@ -3,8 +3,6 @@ name: Django Docker Image
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
 
@@ -22,8 +20,4 @@ jobs:
 
     - name: Push Docker Image
       run: docker push my-django-app:latest
-      with:
-        context: .
-        push: true
-        tags: globalgeezy1/recipeapp-django
       
